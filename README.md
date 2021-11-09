@@ -88,8 +88,8 @@ public class StepDefinitions {
 }
 ```
 
-The `configureSplit` before hook will run before each scenario and configure the `splitClient` with feature flags extracted
-from the scenario tags.
+The `configureSplit` before hook will run before each scenario and configure the `splitClient` with feature flags declared
+as scenario tags.
 
 ## Production code design
 
