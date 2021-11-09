@@ -22,4 +22,3 @@ jobs:
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
           nexus-username: cukebot
           nexus-password: ${{ secrets.SONATYPE_PASSWORD }}
-          working-directory: java
