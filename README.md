@@ -25,8 +25,8 @@ We have decided to make the new **flat white** drink available to a small set of
 feature flag to control whether it is available or not.
 
 Even though only a small set of customers will have the **flat white** functionality, we want to test that it works as
-expected. We have two scenarios that verify options in the drink selection menu; One where **flat white** is available
-(the feature flag is on), and another where it is not (the feature flag is off):
+expected. We have two scenarios that verify options in the drink selection menu; One where **flat white** is not available
+(the feature flag is `off`), and another where it is (the feature flag is `on`):
 
 ```gherkin
 Feature: Make Coffee
@@ -93,7 +93,7 @@ as scenario tags.
 
 ## Production code design
 
-Your production code must be designed in such a way that it can use a `io.split.client.SplitClient` passed
+Your production code must be designed in such a way that a `io.split.client.SplitClient` can be passed
 to it, rather than creating its own instance. This is so that we can pass it the `splitClient` instantiated and configured
 by Cucumber.
 
