@@ -1,3 +1,5 @@
+[![test-java](https://github.com/cucumber/split-java/actions/workflows/test-java.yml/badge.svg)](https://github.com/cucumber/split-java/actions/workflows/test-java.yml)
+
 # Cucumber Split
 
 Cucumber Split is a [Cucumber-JVM](https://github.com/cucumber/cucumber-jvm/#readme) plugin
