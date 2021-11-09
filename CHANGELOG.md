@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.2] - 2021-11-09
+### Fixed
+- The 0.0.1 release did not make it to Maven central
+
 ## [0.0.1] - 2021-11-09
 ### Added
 - Initial implementation
 
-[Unreleased]: https://github.com/cucumber/split-java/compare/0.0.1...HEAD
-[0.0.1]: https://github.com/cucumber/split-java/compare/4cbfbd42a11dd8f9714e0f545fbc47d7cc4c356d...0.0.1
+[Unreleased]: https://github.com/cucumber/split-java/compare/v0.0.1...HEAD
+[0.0.2]: https://github.com/cucumber/split-java/compare/v0.0.1...v0.0.2
+[0.0.1]: https://github.com/cucumber/split-java/compare/4cbfbd42a11dd8f9714e0f545fbc47d7cc4c356d...v0.0.1
