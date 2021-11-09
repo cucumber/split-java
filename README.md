@@ -49,16 +49,40 @@ Feature: Make Coffee
       | caffe latte   |  2.30 |
 ```
 
-## Configuration
+## Installation
 
-In order to configure Cucumber to toggle Split features based on tags, we need to define a [before hook](https://cucumber.io/docs/cucumber/api/#hooks):
+First, add Cucumber Split to your project:
+
+```xml
+<!-- pom.xml -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-split</artifactId>
+    <version>0.0.1</version>
+    <scope>test</scope>
+</dependency>
+```
+
+```groovy
+// build.gradle(.kts)
+dependencies {
+  testImplementation 'io.cucumber:cucumber-split:0.0.1'
+}
+```
+
+Next, configure Cucumber to toggle Split features based on tags. Define a [before hook](https://cucumber.io/docs/cucumber/api/#hooks):
 
 ```java
-public class StepDefinitions {
-    private final io.split.client.testing.SplitClientForTest splitClient = new io.split.client.testing.SplitClientForTest();
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import io.cucumber.split.CucumberSplit;
+import io.split.client.testing.SplitClientForTest;
 
-    @io.cucumber.java.Before
-    public void configureSplit(io.cucumber.java.Scenario scenario) {
+public class StepDefinitions {
+    private final SplitClientForTest splitClient = new SplitClientForTest();
+
+    @Before
+    public void configureSplit(Scenario scenario) {
         CucumberSplit.configureSplit(splitClient, scenario);
     }
 }

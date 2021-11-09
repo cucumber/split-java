@@ -1,9 +1,12 @@
 package io.cucumber.split.example;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.DataTableType;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.split.CucumberSplit;
+import io.split.client.testing.SplitClientForTest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,11 +17,11 @@ import static java.util.Collections.emptySortedSet;
 import static org.junit.Assert.assertEquals;
 
 public class StepDefinitions {
-    private final io.split.client.testing.SplitClientForTest splitClient = new io.split.client.testing.SplitClientForTest();
+    private final SplitClientForTest splitClient = new SplitClientForTest();
     private final CoffeeMachine coffeeMachine = new CoffeeMachine(splitClient, "arbitraryKey");
 
-    @io.cucumber.java.Before
-    public void configureSplit(io.cucumber.java.Scenario scenario) {
+    @Before
+    public void configureSplit(Scenario scenario) {
         CucumberSplit.configureSplit(splitClient, scenario);
     }
 
