@@ -10,8 +10,8 @@ that lets you toggle [Split](https://www.split.io/) feature flags on or off usin
 Software teams that use Split [feature flags](https://martinfowler.com/articles/feature-toggles.html)
 need to test that the software works as expected for different combinations of feature flags.
 
-With Cucumber Split you can write Cucumber scenarios that configure feature flags using tags, and then
-verify that the software works as expected when those flags are on or off.
+With Cucumber Split you can toggle feature flags declaratively with tags, and then
+verify that the software works as expected.
 
 ## Example
 
