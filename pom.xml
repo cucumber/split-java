@@ -55,7 +55,7 @@
         <dependency>
             <groupId>io.split.client</groupId>
             <artifactId>java-client-testing</artifactId>
-            <version>4.3.0</version>
+            <version>4.4.2</version>
             <scope>provided</scope>
         </dependency>
 
