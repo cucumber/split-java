@@ -58,7 +58,7 @@ First, add Cucumber Split to your project:
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-split</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <scope>test</scope>
 </dependency>
 ```
@@ -66,7 +66,7 @@ First, add Cucumber Split to your project:
 ```groovy
 // build.gradle(.kts)
 dependencies {
-  testImplementation 'io.cucumber:cucumber-split:0.0.1'
+  testImplementation 'io.cucumber:cucumber-split:0.0.2'
 }
 ```
 
