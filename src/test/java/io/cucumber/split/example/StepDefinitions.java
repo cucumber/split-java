@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.SortedSet;
 
 import static java.util.Collections.emptySortedSet;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StepDefinitions {
     private final SplitClientForTest splitClient = new SplitClientForTest();
